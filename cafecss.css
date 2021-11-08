@@ -1,0 +1,472 @@
+*
+{
+    margin: 0;
+    padding:0 ;
+    
+}
+.cafe
+{
+    background-image: url(cafe.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.cafe nav 
+{
+    display: flex;
+    float: right;
+    margin: 20px;
+    position: relative;
+    padding: 0% 6%;
+    
+}
+.cafe nav a
+{
+    text-decoration: none;
+    color: rgb(226, 130, 51);
+    padding-right: 80px;
+    font-size: 30px;
+    font-weight: 600;
+   }
+   .cafe nav a::after
+   {
+       content: '';
+       width: 0%;
+       height: 2px;
+       display: block;
+       background:rgb(226, 130, 51); 
+       margin: auto;
+   }
+   .cafe nav a:hover::after
+   {
+      width: 100%;
+      
+   }
+   .cafe nav a:hover
+   {
+       color: white;
+   }
+   .head
+   {
+     color: white;
+     display: block;
+     width: 20%;
+     border: 1px solid rgba(0,0,0,0.5);
+     position: absolute;
+     background: rgba(0,0,0,0.7);
+     top: 20%;
+    left: 35%;
+    text-align: center;
+    padding: 2% 3% ;
+    height: 130px;
+   }
+   .head h1
+   {
+       font-size: 55px;
+       font-weight: bolder;
+   }
+   .head p
+   {
+       margin-top: 10px;
+       font-size: 20px;
+       color: rgb(226, 130, 51);
+   }
+   .para
+   {
+       top: 50%;
+       left: 35%;
+       position: absolute;
+       width: 20%;
+       background:rgba(0,0,0,0.7) ;
+       height: 140px;
+       padding: 2% 3% ;
+       color: white;
+
+   }
+   .para p
+   {
+      
+       font-family: 'Lato', sans-serif;
+       line-height: 26px;
+       font-size: 20px;
+   }
+  .para fade
+  {
+      color: yellow;
+  }
+  .para fade:hover
+  {
+      color: rgb(48, 201, 212);
+      cursor: pointer;
+  }
+  .let
+  {
+      color: white;
+      position: absolute;
+      top: 80%;
+      left: 41%;
+      background:rgba(0,0,0,0.7) ;
+      padding: 1% 2%;
+      border-radius: 10px 10px 10px 10px;
+      color: tomato;
+
+  }
+  .let i
+  {
+      margin: 5px;
+  }
+  .let:hover
+  {
+      cursor: pointer;
+      color: white;
+  }
+
+  @media(max-width:700px)
+  {
+    .cafe nav
+    {
+        
+        padding: 5px;
+        margin: 10px;
+        position:absolute;
+        justify-content: center;
+        
+    }
+    .cafe nav a 
+    {
+       
+        display: inline-block;
+        font-size: 13px;
+        
+    }
+    .head
+    {
+        width: 220px;
+        position: absolute;
+        height: 100px;
+        left: 20%;
+    }
+    .head h1 
+    {
+        font-size: 25px;
+        text-align: center;
+        margin: 10px;
+        
+    }
+    .head p
+    {
+        font-size: 15px;
+    }
+    .para
+    {
+        width: 220px;
+        position: absolute;
+        height: 225px;
+        left: 20%;
+        font-size: 15px;
+        top: 40%;
+    }
+    .let
+    {
+        left: 28%;
+        position: absolute;
+    }
+  }
+  .pic
+  {
+      background-image: url(capbg.jpg);
+      background-size: cover;
+      width: 100%;
+      height: 100vh;
+  }
+
+  .list1
+  {
+      display: inline-block;
+      width: 500px;
+      height: 600px;
+      background: rgba(175, 99, 80, 0.993);
+      border-radius:10px 10px 10px 10px;
+      margin-left: 200px;
+      margin-top: 150px;
+  }
+  .list1 img
+  {
+      width: 120px;
+      margin: 10px;
+      border-radius:10px 10px 10px 10px;
+  }
+
+  .list2
+  {
+      display: inline-block;
+      width: 500px;
+      height: 600px;
+      background: rgba(175, 99, 80, 0.993);
+      border-radius:10px 10px 10px 10px;
+      margin-left: 120px;
+      margin-top: 150px;
+      
+  }
+  .list2 img
+  {
+      width: 120px;
+      margin: 10px;
+      border-radius:10px 10px 10px 10px;
+      position: relative;
+      left: 70%;      
+  }
+  .list1 h2, .list2 h2
+  {
+      display: inline-block;
+      position: absolute;
+      margin: 10px;
+      color: white;
+  }
+  .list1 p{
+    text-align: center;
+    position: relative;
+    bottom: 9%;
+    right: 6%;
+    color: white;
+  }
+  .list2 p
+  {
+      text-align: center;
+      position: relative;
+      bottom: 9%;
+      left: 5%;
+      color: white;
+  }
+  .menu
+  {
+      padding: 1% 3%;
+      background: white;
+      position: absolute;
+      text-align: center;
+      left: 40% ;
+      margin: 10px;
+      border-radius: 10px 10px 10px 10px;
+  }
+
+  .double img
+  {
+      
+      display: inline-block;
+      height: 800px;
+      width: 788px;
+      background-size: cover;
+      background-position: 100%;
+      margin: auto;
+      
+      
+  }
+  .double
+  {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+  .about
+  {
+      color: white;
+      background-color: rgba(241, 237, 237, 0.897);
+      width: 450px;
+      padding: 2% 3%;
+      height: 330px;
+      position: absolute;
+      top: 230%;
+      left: 55%;
+      border-radius: 10px 10px 10px 10px ;
+      
+  }
+  .about h1
+  {
+      color: rgb(30, 104, 95);
+      margin: 10px;
+      font-size: 40px;
+      font-weight: 800;
+  }
+  .about p
+  {
+      font-size: 20px;
+      color: black;
+      line-height: 30px;
+  }
+  .about fade
+  {
+      color: rgb(30, 104, 95);
+  }
+  .about fade:hover
+  {
+      color: rgb(37, 63, 134);
+      cursor: pointer;
+  }
+
+  .icon
+  {
+      background-color:rgb(30, 104, 95) ;
+      position: absolute;
+      top: 100%;
+      left:1%;
+      padding: 1% 3%;
+      margin: 10px;
+      font-size: 20px;
+      border-radius: 10px 10px 10px 10px;
+  }
+  .icon p
+  {
+    color: white;
+    font-size: 20px;
+  }
+  .icon i 
+  {
+     margin: 5px;
+     padding: 5px;
+     color: white;
+  }
+  .combine
+  {
+      display: flex;
+      position: relative;
+      
+      margin: 0;
+      padding: 0;
+  }
+  .combine img
+  {
+      width: 100%;
+  }
+  .contact
+  {
+      background: rgba(238, 234, 234, 0.836);
+      width: 500px;
+      height: 500px;
+      position: absolute;
+      margin: 30px;
+      top: 20%;
+      left: 8%;
+      border-radius: 10px 10px 10px 10px;
+  }
+  .contact h1
+  {
+      margin: 30px;
+      font-size: 40px;
+      color: rgb(30, 104, 95) ;
+  }
+  .contact ul li
+  {
+      list-style-type: none;
+      margin: 30px;
+      font-size: 25px;
+  }
+
+  .contact h2 i
+  {
+      margin: 20px;
+      color: white;
+  }
+  .contact h2 
+  {
+    background:rgb(30, 104, 95) ;
+    position: absolute;
+    margin: 8px;
+    padding: 5px 35px 5px 5px;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+    left: 25%;
+    color: white;
+  }
+  .contact h2:hover
+  {
+      opacity: 0.5;
+      cursor: pointer;
+  }
+  .fill
+  {
+    background: rgba(27, 26, 26, 0.507);
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    margin: 20px;
+    left: 60%;
+    top: 20%;
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+  }
+  .name1 input
+  {
+  margin: 50px;
+ font-size: 20px;
+ width: 400px;
+ height: 40px;
+ outline: none;
+ background: none;
+ color: white;
+ border-top-style: none;
+ border-left-style: none;
+ border-right-style: none;
+ border-bottom: 1px solid white;
+}
+
+
+.email input
+  {
+  margin: 50px;
+  width: 400px;
+ height: 40px;
+ outline: none;
+ background: none;
+ color: white;
+ border-top-style: none;
+ border-left-style: none;
+ border-right-style: none;
+ border-bottom: 1px solid white;
+ position: absolute;
+ top: 15%;
+ font-size: 20px;
+}
+
+.msg input
+  {
+  margin: 50px;
+  width: 400px;
+ height: 140px;
+ outline: none;
+ background: none;
+ color: white;
+ border-top-style: none;
+ border-left-style: none;
+ border-right-style: none;
+ border: 1px solid white;
+ position: absolute;
+ top: 30%;
+ font-size: 20px;
+}
+
+.send
+{
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    background: white;
+    color: black;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: 1px groove black;
+    font-family: 'Bebas Neue';
+}
+
+.name1 input:hover , .msg input:hover , .email input:hover
+{
+    border: 1px solid white;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px 3px rgba(255, 255, 255, 0.589);
+}
+.send:hover
+{
+    border: 1px groove rgb(240, 238, 238);
+    cursor: pointer;
+    box-shadow: 0px 0px 3px 3px rgba(255, 255, 255, 0.589);
+}
